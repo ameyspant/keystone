@@ -49,6 +49,7 @@ from keystone.conf import tokenless_auth
 from keystone.conf import trust
 from keystone.conf import unified_limit
 from keystone.conf import wsgi
+from keystone.conf import amey
 
 CONF = cfg.CONF
 
@@ -83,7 +84,8 @@ conf_modules = [
     tokenless_auth,
     trust,
     unified_limit,
-    wsgi
+    wsgi,
+    amey,
 ]
 
 
