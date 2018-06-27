@@ -42,7 +42,6 @@ from keystone.version import controllers
 from keystone.version import routers
 from keystone.amey_api import routers as amey_api_routers
 
-
 CONF = keystone.conf.CONF
 LOG = log.getLogger(__name__)
 
@@ -145,7 +144,7 @@ def v3_app_factory(global_conf, **local_conf):
                        endpoint_policy_routers,
                        # TODO(morganfainberg): Remove the simple_cert router
                        # when PKI and PKIZ tokens are removed.
-                       simple_cert_ext
+                       simple_cert_ext,
                        amey_api_routers]
 
     if CONF.trust.enabled:
