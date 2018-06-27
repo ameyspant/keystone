@@ -12,8 +12,8 @@ CONF = keystone.conf.CONF
 class Amey(controller.V3Controller):
     collection_name = 'amey_api'
     member_name = 'amey'
-    def __init__():
-        pass
+    def __init__(self):
+        super(Amey, self).__init__()
     @controller.protected()
     def list_data(self, request):
         return {{'host': CONF.amey.host},{'port': CONF.amey.port}}
