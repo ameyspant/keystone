@@ -51,7 +51,6 @@ from keystone.conf import trust
 from keystone.conf import amey
 
 
-
 CONF = cfg.CONF
 
 

@@ -35,7 +35,6 @@ from keystone.i18n import _
 CONF = keystone.conf.CONF
 LOG = log.getLogger(__name__)
 
-
 @dependency.requires('assignment_api', 'identity_api', 'token_provider_api')
 class TenantAssignment(controller.V2Controller):
     """The V2 Project APIs that are processing assignments."""
