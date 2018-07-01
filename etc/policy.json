@@ -8,7 +8,13 @@
     "admin_or_token_subject": "rule:admin_required or rule:token_subject",
     "service_admin_or_token_subject": "rule:service_or_admin or rule:token_subject",
 
+    "amey": "role:amey or is_amey:1",
+    "deny_nishant": "not role:nishant",
+
     "default": "rule:admin_required",
+
+    "identity:list_data": "rule:amey and rule:deny_nishant",
+
 
     "identity:get_region": "",
     "identity:list_regions": "",
