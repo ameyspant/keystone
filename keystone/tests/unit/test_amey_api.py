@@ -34,10 +34,6 @@ class TestAmey(test_v3.RestfulTestCase):
         super(TestAmey, self).setUp()
 
     def test_amey_validate_list_data(self):
-        auth_data = self.build_authentication_request(
-            user_id=uuid.uuid4().hex,
-            password=self.user['password'],
-            project_id=self.project_id)
         r = self.get('/amey_api/myapi')
         self.assertIn('project',r.result)
         self.assertIn('domain',r.result)
